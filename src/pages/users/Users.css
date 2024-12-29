@@ -92,7 +92,6 @@ table tbody tr:nth-child(odd) {
     border-radius: 50px;
     border: 1px solid #ccc;
 }
-
 .create-user__uid-label {}
 .create-user__username-label {}
 .create-user__password-label {}
@@ -100,6 +99,9 @@ table tbody tr:nth-child(odd) {
 .create-user__phonenumber-label {}
 .create-user__twofa-label {}
 
+.create-user__date-input {
+    text-align: center;
+}
 .create-user__uid-input {}
 .create-user__username-input {}
 .create-user__password-input {}
@@ -123,4 +125,7 @@ table tbody tr:nth-child(odd) {
 }
 .create-user__action__save:hover {
     background-color: rgba(163, 235, 177, 0.6);
+}
+.create-user__action__save.disabled {
+    background-color: #ccc;
 }
