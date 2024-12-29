@@ -1,3 +1,4 @@
+/* --------------- List of user --------------- */
 .list-of-user {
     width: 100%;
     margin-left: 12px;
@@ -58,3 +59,52 @@ table tbody tr:nth-child(odd) {
     width: 14px;
     height: 14px;
 }
+
+/* --------------- Create a new user --------------- */
+.create-new-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 28px auto;
+    background-color: aliceblue;
+    border-radius: 12px;
+    width: 400px;
+}
+.create-user__item {
+    display: flex;   
+    flex-direction: column;
+    width: 100%;
+    padding: 0 28px;
+    margin: 8px 0;
+}
+.create-user__title {
+    margin: 40px 0;
+    text-align: center;
+}
+.create-user__label {
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+.create-user__input {
+    margin-left: 8px;
+    padding: 8px 0 8px 4px;
+    font-size: 16px;
+}
+
+.create-user__uid-label {}
+.create-user__username-label {}
+.create-user__password-label {}
+.create-user__email-label {}
+.create-user__phonenumber-label {}
+.create-user__twofa-label {}
+
+.create-user__uid-input {}
+.create-user__username-input {}
+.create-user__password-input {}
+.create-user__email-input {}
+.create-user__phonenumber-input {}
+.create-user__twofa-input {}
+
+.create-user__actions {}
+.create-user__action {}
+.create-user__action__save {}
