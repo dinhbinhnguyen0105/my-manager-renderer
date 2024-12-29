@@ -1,0 +1,60 @@
+.list-of-user {
+    width: 100%;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.list-of-user__table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead tr {
+    border: 1px solid black;
+}
+table thead th {
+    border: 1px solid black;
+    cursor: pointer;
+}
+table thead .user-info__status {
+    width: 60px;
+}
+table thead .user-info__signed-in {
+    width: 60px;
+}
+table thead .user-info__num {
+    width: 60px;
+}
+th,td {
+    padding: 15px;
+}
+table tbody tr:nth-child(odd) {
+    background-color: aliceblue;
+}
+.list-of-user__table tr.warn {
+    background-color: rgba(255,153,102, 0.6);
+}
+.list-of-user__table tr.error {
+    background-color: rgba(255,51,51, 0.6);
+}
+.col__actions {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: none;
+    padding: 0;
+    margin: 2px;
+}
+.col__actions button {
+    border: none;
+    padding: 4px 4px;
+    border-radius: 50px;
+    margin: 2px;
+    cursor: pointer;
+}
+.col__actions .actions__open {
+
+}
+.col__actions button img {
+    width: 14px;
+    height: 14px;
+}
