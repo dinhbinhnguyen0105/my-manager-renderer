@@ -6,7 +6,9 @@ const RenderContext = createContext();
 function RenderProvider({ children }) {
     const [renderState, setRenderState] = useState({
         page: "users",
-        content: "create-new-user",
+        // content: "list-of-uid",
+        content: "uid-info",
+        uid: "100065098422625",
     });
 
     return (

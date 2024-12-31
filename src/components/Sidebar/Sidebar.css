@@ -36,7 +36,7 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 4px 8px;
     margin-bottom: 4px;
     border-radius: 50px;
@@ -50,6 +50,9 @@
 }
 .sidebar__item.active .sidebar__icon {
     background-color: rgb(205,223,253);
+}
+.sidebar__item.disabled {
+    background-color: #ccc;
 }
 .sidebar__item .sidebar__icon {
     

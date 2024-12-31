@@ -25,6 +25,7 @@
 .navbar__item:hover {
     background-color: rgb(221,225,231);
 }
+
 .navbar__item.active {
     background-color: rgb(205,223,253);
 }
@@ -36,15 +37,31 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
+    min-width: 100px;
+}
+
+.navbar__search::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 12px; /* Adjust height as needed */
+    background: transparent;
+    pointer-events: auto; /* Make the pseudo-element interactive */
+}
+
+.navbar__search:hover .navbar__search__result,
+.navbar__search__result:hover {
+    display: block;
 }
 
 .navbar__search input {
-    /* display: none; */
     border-radius: 50px;
     border: 1px solid rgb(242, 242, 242);
     padding-left: 8px;
-    /* height: 32px; */
     height: 0;
     width: 0;
     transition: all 0.3s ease;
@@ -54,7 +71,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: -40px;
     padding: 8px;
     border-radius: 50px;
     background-color: #fff;
@@ -78,3 +94,29 @@
     width: 0;
     height: 0;
 }
+.navbar__search .navbar__search__result {
+    display: none;
+    width: 400px;
+    max-height: 300px;
+    position: absolute;
+    right: 0;
+    top: 48px;
+    background-color: rgba(0, 0, 0, 0.3); /* Add semi-transparent background */
+    padding: 0 12px 12px 12px;
+    overflow-y: auto; /* Add this line to enable scrolling */
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.navbar__search .navbar__search__result .search__result__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 8px 0;
+    background-color: #fff; 
+    padding: 8px;
+    border-radius: 4px;
+}
+.navbar__search .navbar__search__result .result__item__uid {}
+.navbar__search .navbar__search__result .result__item__username {}

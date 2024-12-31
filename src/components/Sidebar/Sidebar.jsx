@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 
 import { RenderContext } from "../../contexts/RenderContext";
 import { assets } from "../../assets/assets";
@@ -21,7 +21,7 @@ function Sidebar() {
     );
 
     const renderSidebarItems = (items) => (
-        <div className="sidebar__items">
+        <>
             {items.map(item => (
                 <div
                     key={item.data}
@@ -33,23 +33,25 @@ function Sidebar() {
                     {minimizeState && <div className="sidebar__item__label"><p>{item.label}</p></div>}
                 </div>
             ))}
-        </div>
+        </>
     );
 
     const sidebarContent = {
         users: [
-            { data: "list-of-user", icon: "list_solar_icon", label: "List of user" },
+            { data: "list-of-uid", icon: "list_solar_icon", label: "List of user" },
             { data: "create-new-user", icon: "add_solar_icon", label: "Create a new user" },
-            { data: "check-all-user", icon: "check_solar_icon", label: "Check live all user" }
         ],
         marketplace: [],
         home: []
     };
 
+
     return (
         <div className={`sidebar ${!minimizeState ? "minimize" : ""}`}>
             <SidebarHeader title={renderContext.page.charAt(0).toUpperCase() + renderContext.page.slice(1)} />
-            {renderSidebarItems(sidebarContent[renderContext.page] || [])}
+            <div className="sidebar__items">
+                {renderSidebarItems(sidebarContent[renderContext.page] || [])}
+            </div>
         </div>
     );
 }

@@ -1,0 +1,98 @@
+.content {
+    width: 100%;
+    margin: 12px;
+}
+.content .content__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: aliceblue;
+    padding: 0 24px;
+    border-radius: 50px;
+    height: 32px;
+}
+.content .content__actions .content__action {
+    padding: 4px 12px;
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    gap: 12px;
+    max-width: 44px;
+    background-color: transparent;
+}
+.content .content__actions button[disabled] {
+    background-color: rgba(128,128,128,0.2);
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.content .content__actions .content__action.focus {
+    max-width: 300px;
+}
+.content .content__actions .content__action img {
+    width: 20px;
+    height: auto;
+    gap: 12px;
+}
+.content .content__list {
+    width: 100%;
+    margin-top: 24px;
+}
+.content .content__list .content__list__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.content__list__table th,td {
+    padding: 15px;
+}
+.content__list__table thead tr {
+    border: 1px solid black;
+}
+.content__list__table thead th {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.content__list__table thead .user-info__status {
+    width: 60px;
+}
+.content__list__table thead .user-info__signed-in {
+    width: 60px;
+}
+.content__list__table thead .user-info__num {
+    width: 30px;
+}
+.content__list__table tbody tr:nth-child(odd) {
+    background-color: aliceblue;
+}
+.content .content__list .content__list__table .row.active {
+    background-color: #7EC8E3 !important;
+}
+.content__list__table .row.warn {
+    background-color: rgba(255,153,102, 0.6);
+}
+.content__list__table .row.error {
+    background-color: rgba(255,51,51, 0.6);
+}
+.content__list__table .col__actions {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: none;
+    padding: 0;
+    margin: 2px;
+}
+.content__list__table .col__actions button {
+    border: none;
+    padding: 4px 4px;
+    border-radius: 50px;
+    margin: 2px;
+    cursor: pointer;
+    color: transparent;
+}
+.content__list__table .col__actions button img {
+    width: 14px;
+    height: 14px;
+}

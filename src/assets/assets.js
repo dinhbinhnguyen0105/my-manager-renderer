@@ -12,6 +12,7 @@ import arrow_right_solar_icon from "./arrow_right_solar.svg";
 import list_solar_icon from "./list_solar.svg";
 import delete_repo_icon from "./delete_repo.svg";
 import open_repo_icon from "./open_repo.svg";
+import signin_icon from "./sign-in.svg";
 
 export const assets = {
     add_icon,
@@ -28,4 +29,5 @@ export const assets = {
     list_solar_icon,
     delete_repo_icon,
     open_repo_icon,
+    signin_icon,
 };
