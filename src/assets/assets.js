@@ -13,6 +13,12 @@ import list_solar_icon from "./list_solar.svg";
 import delete_repo_icon from "./delete_repo.svg";
 import open_repo_icon from "./open_repo.svg";
 import signin_icon from "./sign-in.svg";
+import uid_info_edit_icon from "./uid_info_edit.svg";
+import uid_info_groups_icon from "./uid_info_groups.svg";
+import uid_info_open_icon from "./uid_info_open.svg";
+import uid_info_save_icon from "./uid_info_save.svg";
+import uid_info_signin_icon from "./uid_info_signin.svg";
+import uid_info_status_icon from "./uid_info_status.svg";
 
 export const assets = {
     add_icon,
@@ -30,4 +36,10 @@ export const assets = {
     delete_repo_icon,
     open_repo_icon,
     signin_icon,
+    uid_info_edit_icon,
+    uid_info_groups_icon,
+    uid_info_open_icon,
+    uid_info_save_icon,
+    uid_info_signin_icon,
+    uid_info_status_icon,
 };

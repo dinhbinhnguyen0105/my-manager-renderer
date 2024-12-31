@@ -84,6 +84,9 @@
     padding: 0;
     margin: 2px;
 }
+.content__list__table .col__actions .actions__open[disabled] {
+    opacity: 0.3;
+}
 .content__list__table .col__actions button {
     border: none;
     padding: 4px 4px;

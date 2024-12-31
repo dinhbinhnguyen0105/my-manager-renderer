@@ -1,14 +1,13 @@
 .uid-info {
-    width: 400px;
+    width: 480px;
     height: 100vh;
-    margin: 0 auto;
-    padding: 12px;
+    margin: 12px auto;
+    padding: 24px 12px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    background-color: #ccc;
+    /* background-color: #ccc; */
     border-radius: 12px;
+    box-shadow: 2px 2px 4px 1px #ccc;
 }
 .uid-info .uid-info__item {
     display: flex;
@@ -16,6 +15,11 @@
     align-items: center;
     padding: 8px 0;
     width: 100%;
+}
+.uid-info .uid-info__item input {
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 50px;
 }
 .uid-info .uid-info__item .info__item__label {
     width: 30%;
@@ -26,7 +30,6 @@
     padding: 0 12px;
 }
 .uid-info .uid-info__item .uid-info__actions {
-    /* width: 40%; */
     margin-left: 12px;
     display: flex;
     flex-direction: row;
@@ -34,10 +37,28 @@
     align-items: center;
 }
 
-
-.uid-info__groups {}
-.uid-info__groups .info__groups__value {
+.uid-info__item .uid-info__actions .uid-info__action {
+    padding: 4px 8px;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: aliceblue;
+    transition: padding .2s ease;
 }
-.uid-info__groups .info__groups__value .info__groups__list {
-    display: none;
+.uid-info__item .uid-info__actions .uid-info__action:hover{
+    border: 1px solid aliceblue;
+    background-color: rgb(230, 235, 245);
+    padding: 8px 16px;
+}
+.uid-info__item .uid-info__actions .uid-info__action[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.uid-info__actions .uid-info__action img {
+    width: 20px;
+    height: 20px;
 }

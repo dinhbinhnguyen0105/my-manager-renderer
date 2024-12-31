@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 
 import { RenderContext } from "../../../contexts/RenderContext";
+import { assets } from "../../../assets/assets";
 import "./Info.css";
 
 function UIDInfo() {
@@ -19,6 +20,11 @@ function UIDInfo() {
     const [inputTypeState, setInputTypeState] = useState(true);
     const [inputNoteState, setInputNoteState] = useState(true);
     const [inputDateState, setInputDateState] = useState(true);
+    const [saveBtnDisabledState, setSaveBtnDisabledState] = useState(false);
+    const [openBtnDisabledState, setOpenBtnDisabledState] = useState(false);
+    const [statusBtnDisabledState, setStatusBtnDisabledState] = useState(false);
+    const [signinBtnDisabledState, setSigninBtnDisabledState] = useState(false);
+    const [groupBtnDisabledState, setGroupBtnDisabledState] = useState(false);
 
     useEffect(() => {
         if (window.electronAPIs) {
@@ -28,8 +34,14 @@ function UIDInfo() {
             });
             window.electronAPIs.on("uid-info", (event, response) => {
                 setUIDInfoState(response.data);
-                console.log(response.data);
             });
+            window.electronAPIs.on("edit-uid", (event, response) => {
+                setSaveBtnDisabledState(false);
+            });
+            window.electronAPIs.on("open-browser", (event, response => setOpenBtnDisabledState(false)));
+            window.electronAPIs.on("check-status", (event, response => setStatusBtnDisabledState(false)));
+            window.electronAPIs.on("check-signin", (event, response => setSigninBtnDisabledState(false)));
+            window.electronAPIs.on("get-groups", (event, response => setGroupBtnDisabledState(false)));
         } else {
             setUIDInfoState({
                 "uid": "100065098422625",
@@ -184,48 +196,45 @@ function UIDInfo() {
 
     const saveBtnHandler = e => {
         const ariaData = e.target.closest(".uid-info__item").getAttribute("data");
-        if(window.electronAPIs) {
+        setSaveBtnDisabledState(true);
+        if (window.electronAPIs) {
             window.electronAPIs.send("action", {
                 action: "edit-uid",
-                data: { uid: UIDInfoState.uid, key : ariaData, value : UIDInfoState[ariaData]},
+                data: { uid: UIDInfoState.uid, key: ariaData, value: UIDInfoState[ariaData] },
             });
-            e.target.disabled = true;
+        } else {
+            setTimeout(() => {
+                setSaveBtnDisabledState(false);
+            }, 1000);
+        }
+    };
+    const actionBtnHandler = (action) => {
+        if (window.electronAPIs) {
+            switch (action) {
+                case "open-browser": {
+                    setOpenBtnDisabledState(true);
+                    break;
+                };
+                case "check-status": {
+                    setStatusBtnDisabledState(true);
+                    break;
+                };
+                case "check-signin": {
+                    setSigninBtnDisabledState(true);
+                    break;
+                };
+                case "get-groups": {
+                    setGroupBtnDisabledState(true);
+                    break;
+                };
+                default: throw new Error("Invalid action in action btn");
+            };
+            window.electronAPIs.send("action", {
+                action: action,
+                uid: UIDInfoState.uid
+            })
         };
-    };
-
-    const Groups = () => {
-        return (
-            <div className="uid-info__item uid-info__groups" data="groups">
-                <label htmlFor="info__groups__value" className="info__item__label">Groups</label>
-                <div className="info__groups__value info__item__value" id="infor__groups__value">
-                    <div className="info__groups__length" >
-                        <p>{UIDInfoState.groups ? UIDInfoState.groups.length : "0"}</p>
-                    </div>
-                    <div className="info__groups__list">
-                        {
-                            UIDInfoState.groups && UIDInfoState.groups.map((group, index) => {
-                                let gid = "";
-                                const match = group.url.match(/groups\/([a-zA-Z0-9_.\-]+)/);
-                                if (match) { gid = match[1]; }
-                                else { gid = ""; };
-                                return (
-                                    <div className="info__group__item" key={index}>
-                                        <div className="info__group__gid"><p>GID: {gid}</p></div>
-                                        <div className="info__group__name"><p>Name: {group.name}</p></div>
-                                        <div className="info__group__memeber"><p>Member: {group.members}</p></div>
-                                        <div className="info__group__marketplace"><p>Is marketplace: {group.isMarketplace ? "true" : "false"}</p></div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </div>
-                <div className="uid-info__actions">
-                    <button className="uid-info__action" id="action__groups-check">Check groups</button>
-                </div>
-            </div>
-        );
-    };
+    }
 
     return (
         <div className="uid-info">
@@ -233,15 +242,15 @@ function UIDInfo() {
                 <label htmlFor="info__date__value" className="info__item__label">date</label>
                 <input type="text" id="info__date__value" className="info__item__value" value={UIDInfoState.date} onChange={e => setUIDInfoState(prev => ({ ...prev, date: e.target.value }))} disabled={inputDateState} />
                 <div className="uid-info__actions">
-                    <button className="uid-info__action" id="action__date-edit" onClick={() => setInputDateState(false)}>Edit</button>
-                    <button className="uid-info__action" id="action__date-save" onClick={saveBtnHandler}>Save</button>
+                    <button className="uid-info__action" id="action__date-edit" onClick={() => setInputDateState(false)}><img src={assets.uid_info_edit_icon} /></button>
+                    <button className="uid-info__action" id="action__date-save" onClick={saveBtnHandler} disabled={saveBtnDisabledState}><img src={assets.uid_info_save_icon} alt="" /></button>
                 </div>
             </div>
             <div className="uid-info__item uid-info__uid" data="uid">
                 <label htmlFor="info__uid__value" className="info__item__label">UID</label>
                 <p id="info__uid__value" className="info__item__value">{UIDInfoState.uid}</p>
                 <div className="uid-info__actions">
-                    <button className="uid-info__action">Open</button>
+                    <button className="uid-info__action" onClick={() => actionBtnHandler("open-browser")} disabled={openBtnDisabledState}><img src={assets.uid_info_open_icon} alt="" /></button>
                 </div>
             </div>
             <div className="uid-info__item uid-info__username" data="username">
@@ -252,33 +261,49 @@ function UIDInfo() {
                 <label htmlFor="info__status__value" className="info__item__label">status</label>
                 <p id="info__status__value" className="info__item__value">{UIDInfoState.status ? "Live" : "Checkpoint"}</p>
                 <div className="uid-info__actions">
-                    <button className="uid-info__action">Check status</button>
+                    <button className="uid-info__action" onClick={() => actionBtnHandler("check-status")} disabled={statusBtnDisabledState}>
+                        <img src={assets.uid_info_status_icon} alt="" />
+                    </button>
                 </div>
             </div>
             <div className="uid-info__item uid-info__signin" data="signin">
                 <label htmlFor="info__signin__value" className="info__item__label">sign in</label>
                 <p id="info__signin__value" className="info__item__value">{UIDInfoState.sign_in ? "True" : "False"}</p>
                 <div className="uid-info__actions">
-                    <button className="uid-info__action">Check sign in</button>
+                    <button className="uid-info__action" onClick={() => actionBtnHandler("check-signin")} disabled={signinBtnDisabledState}>
+                        <img src={assets.uid_info_signin_icon} alt="" />
+                        </button>
                 </div>
             </div>
             <div className="uid-info__item uid-info__type" data="type">
                 <label htmlFor="info__type__value" className="info__item__label">type</label>
                 <input type="text" id="info__type__value" className="info__item__value" value={UIDInfoState.type} onChange={e => setUIDInfoState(prev => ({ ...prev, type: e.target.value }))} disabled={inputTypeState} />
                 <div className="uid-info__actions">
-                    <button className="uid-info__action" id="action__type-edit" onClick={() => setInputTypeState(false)}>Edit</button>
-                    <button className="uid-info__action" id="action__type-save" onClick={saveBtnHandler}>Save</button>
+                    <button className="uid-info__action" id="action__type-edit" onClick={() => setInputTypeState(false)}><img src={assets.uid_info_edit_icon} /></button>
+                    <button className="uid-info__action" id="action__type-save" onClick={saveBtnHandler} disabled={saveBtnDisabledState}><img src={assets.uid_info_save_icon} /></button>
                 </div>
             </div>
             <div className="uid-info__item uid-info__note" data="note">
                 <label htmlFor="info__note__value" className="info__item__label">note</label>
                 <input type="text" id="info__note__value" className="info__item__value" value={UIDInfoState.note} onChange={e => setUIDInfoState(prev => ({ ...prev, note: e.target.value }))} disabled={inputNoteState} />
                 <div className="uid-info__actions">
-                    <button className="uid-info__action" id="action__note-edit" onClick={() => setInputNoteState(false)}>Edit</button>
-                    <button className="uid-info__action" id="action__note-save" onClick={saveBtnHandler}>Save</button>
+                    <button className="uid-info__action" id="action__note-edit" onClick={() => setInputNoteState(false)}><img src={assets.uid_info_edit_icon} /></button>
+                    <button className="uid-info__action" id="action__note-save" onClick={saveBtnHandler} disabled={saveBtnDisabledState}><img src={assets.uid_info_save_icon} /></button>
                 </div>
             </div>
-            <Groups />
+            <div className="uid-info__item uid-info__groups" data="groups">
+                <label htmlFor="info__groups__value" className="info__item__label">Groups</label>
+                <div className="info__groups__value info__item__value" id="infor__groups__value">
+                    <div className="info__groups__length" >
+                        <p>{UIDInfoState.groups ? UIDInfoState.groups.length : "0"}</p>
+                    </div>
+                </div>
+                <div className="uid-info__actions">
+                    <button className="uid-info__action" id="action__groups-check" onClick={() => actionBtnHandler("get-groups")} disabled={groupBtnDisabledState}>
+                        <img src={assets.uid_info_groups_icon} alt="" />
+                    </button>
+                </div>
+            </div>
         </div>
     )
 }

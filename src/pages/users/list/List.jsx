@@ -6,6 +6,7 @@ import "./List.css";
 function ListTable() {
     const [listOfUserState, setListOfUserState] = useState([]);
     const [sortConfig, setSortConfig] = useState({ key: null, ascending: true });
+    const [openBtnDisabledState, setOpenBtnDisabledState] = useState(false);
 
     useEffect(() => {
         if (window.electronAPIs) {
@@ -14,6 +15,9 @@ function ListTable() {
             });
             window.electronAPIs.on("list-of-uid", (event, response) => {
                 setListOfUserState(response.data);
+            });
+            window.electronAPIs.on("open-browser", (event, data) => {
+                setOpenBtnDisabledState(false);
             });
         } else {
             setListOfUserState([
@@ -90,7 +94,7 @@ function ListTable() {
                             <td className="user-info__type col__type">{userInfo.type}</td>
                             <td className="user-info__note col__note">{userInfo.note}</td>
                             <td className="user-info__actions col__actions">
-                                <button className="actions__open" onClick={e => actionsHandler(e, "open-browser")}><img src={assets.open_repo_icon} alt="" /></button>
+                                <button className="actions__open" onClick={e => actionsHandler(e, "open-browser")} disabled={openBtnDisabledState}><img src={assets.open_repo_icon} alt="" /></button>
                                 <button className="actions__del" onDoubleClick={e => actionsHandler(e, "delete-browser")}><img src={assets.delete_repo_icon} alt="" /></button>
                             </td>
                         </tr>
