@@ -1,0 +1,42 @@
+.content__robot {}
+
+.content__robot__uids {
+    width: 50%;
+}
+
+.content__robot__uids .uids__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content__robot__uids .uids__table .uid__num {
+    width: 1000px;
+}
+
+.content__robot__uids .uids__table .uids__table__head {}
+
+.uids__table .uids__table__head th {
+    padding: 15px;
+    border: 1px solid black;
+    text-transform: capitalize;
+}
+
+.uids__table .uids__table__head tr {}
+
+.content__robot__uids .uids__table .uids__table__body {}
+
+.uids__table .uids__table__body tr:nth-child(odd) {
+    background-color: aliceblue;
+}
+.uids__table .uids__table__body .table__body__row.error {
+    background-color: rgba(255,51,51, 0.6);
+}
+.uids__table .uids__table__body .table__body__row.warn {
+    background-color: rgba(255,153,102, 0.6);
+}
+
+.robot__uid__setting .uid__setting__items {
+    padding: 4px;
+}
+
+.content__robot__setting {}
