@@ -200,7 +200,10 @@ function UIDInfo() {
         if (window.electronAPIs) {
             window.electronAPIs.send("action", {
                 action: "edit-uid",
-                data: { uid: UIDInfoState.uid, key: ariaData, value: UIDInfoState[ariaData] },
+                uid: UIDInfoState.uid,
+                data: {
+                    [ariaData]: UIDInfoState[ariaData]
+                },
             });
         } else {
             setTimeout(() => {

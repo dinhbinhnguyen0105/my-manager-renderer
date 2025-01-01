@@ -1,0 +1,70 @@
+
+/* --------------- Create a new user --------------- */
+.create-new-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 28px auto;
+    background-color: aliceblue;
+    border-radius: 12px;
+    width: 600px;
+}
+.create-user__item {
+    display: flex;   
+    flex-direction: column;
+    width: 100%;
+    padding: 0 28px;
+    margin: 8px 0;
+}
+.create-user__title {
+    margin: 40px 0;
+    text-align: center;
+}
+.create-user__label {
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+.create-user__input {
+    margin-left: 8px;
+    padding: 8px 0 8px 12px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+}
+.create-user__uid-label {}
+.create-user__username-label {}
+.create-user__password-label {}
+.create-user__email-label {}
+.create-user__phonenumber-label {}
+.create-user__twofa-label {}
+
+.create-user__date-input {
+    text-align: center;
+}
+.create-user__uid-input {}
+.create-user__username-input {}
+.create-user__password-input {}
+.create-user__email-input {}
+.create-user__phonenumber-input {}
+.create-user__twofa-input {}
+
+.create-user__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 12px; */
+}
+.create-user__action {}
+.create-user__action__save {
+    width: 80px;
+    padding: 8px 0;
+    border-radius: 50px;
+    background-color: rgba(163, 235, 177, 1);
+}
+.create-user__action__save:hover {
+    background-color: rgba(163, 235, 177, 0.6);
+}
+.create-user__action__save.disabled {
+    background-color: #ccc;
+}

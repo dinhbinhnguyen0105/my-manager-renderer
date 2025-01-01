@@ -5,6 +5,7 @@ import { RenderContext } from "../../contexts/RenderContext";
 import List from "./list/List";
 import Create from "./create/Create";
 import UIDInfo from "./info/Info";
+import Robot from "./robot/Robot";
 import "./Users.css";
 
 function Users() {
@@ -16,7 +17,9 @@ function Users() {
             case "create-new-user":
                 return <Create />;
             case "uid-info":
-                return <UIDInfo />
+                return <UIDInfo />;
+            case "robot":
+                return <Robot />;
         }
     }
 

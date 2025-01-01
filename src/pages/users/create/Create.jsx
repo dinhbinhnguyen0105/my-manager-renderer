@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./Create.css";
 
 function Create() {
     const [dateState, setDateState] = useState(() => {
