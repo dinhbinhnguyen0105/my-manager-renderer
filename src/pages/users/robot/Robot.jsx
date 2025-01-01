@@ -51,10 +51,12 @@ function RobotUIDs({ uids, updateUIDHandler, selectedUID, setSelectedUID }) {
     const [reState, setReState] = useState([])
 
     useEffect(() => {
-        window.electronAPIs.send("request", { request: "list-of-product", option: "re" });
-        window.electronAPIs.send("request", { request: "list-of-product", option: "misc" });
-        window.electronAPIs.on("list-of-product-re", ({ ...response }) => setReState(response.data));
-        window.electronAPIs.on("list-of-product-misc", ({ ...response }) => setMiscState(response.data));
+        if (window.electronAPIs) {
+            window.electronAPIs.send("request", { request: "list-of-product", option: "re" });
+            window.electronAPIs.send("request", { request: "list-of-product", option: "misc" });
+            window.electronAPIs.on("list-of-product-re", ({ ...response }) => setReState(response.data));
+            window.electronAPIs.on("list-of-product-misc", ({ ...response }) => setMiscState(response.data));
+        }
     }, []);
 
     const selectUIDHandler = e => {
@@ -115,7 +117,7 @@ function RobotUIDs({ uids, updateUIDHandler, selectedUID, setSelectedUID }) {
                                             <div className="uid__setting__items">
                                                 <h4>UID: {uid.uid}</h4>
                                                 <div className="uid__setting__item">
-                                                    
+
                                                 </div>
                                             </div>
                                         </td>
