@@ -1,0 +1,1238 @@
+{
+    "uids": [
+        {
+            "date": "12-25-2024",
+            "uid": "61568380687797",
+            "username": "Lan Thùy",
+            "2fa": "",
+            "email": "",
+            "phone": "",
+            "status": true,
+            "sign_in": true,
+            "type": "discussion-re",
+            "robot": {
+                "selected": true,
+                "actions": [],
+                "prev": {
+                    "products": [
+                        "re.r.101224.481",
+                        "re.r.101224.481",
+                        "re.r.102324.795",
+                        "re.r.101724.544",
+                        "re.r.101224.636"
+                    ],
+                    "groups": []
+                }
+            }
+        },
+        {
+            "date": "12-25-2024",
+            "uid": "61568437503981",
+            "username": "Mỹ Lan",
+            "2fa": "",
+            "email": "",
+            "phone": "",
+            "status": true,
+            "sign_in": true,
+            "type": "discussion-misc"
+        },
+        {
+            "date": "12-25-2024",
+            "uid": "61568469382220",
+            "username": "Nguyen Merritt",
+            "2fa": "",
+            "email": "",
+            "phone": "",
+            "status": true,
+            "sign_in": true,
+            "type": "marketplace-misc"
+        },
+        {
+            "groups": [
+                {
+                    "url": "https://www.facebook.com/groups/567591003851088/",
+                    "name": "RAO VẶT ĐÀ LẠT",
+                    "members": "40,3K thành viên",
+                    "isMarketplace": true
+                },
+                {
+                    "url": "https://www.facebook.com/groups/135583810395773/",
+                    "name": "Rao Vặt Đà Lạt Online",
+                    "members": "128,7K thành viên",
+                    "isMarketplace": true
+                },
+                {
+                    "url": "https://www.facebook.com/groups/197827032181580/",
+                    "name": "RAO VẶT ĐÀ LẠT ✅",
+                    "members": "36,9K thành viên",
+                    "isMarketplace": false
+                }
+            ],
+            "uid": "61568488563757",
+            "username": "Trúc Phượng ",
+            "status": true,
+            "sign_in": true,
+            "type": "marketplace-re",
+            "date": "12-25-2024",
+            "note": ""
+        },
+        {
+            "date": "12-25-2024",
+            "uid": "61568520902129",
+            "username": "Diệp Nguyệt",
+            "2fa": "",
+            "email": "",
+            "phone": "",
+            "status": true,
+            "sign_in": true,
+            "type": "discussion-re"
+        },
+        {
+            "uid": "100089552645959",
+            "username": "Tú Trúc ",
+            "groups": [
+                {
+                    "url": "https://www.facebook.com/groups/2014720368748098/",
+                    "name": "Khách Sạn Và Homestay view đẹp tại Đà Lạt",
+                    "members": "31,0K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2099732857008520/",
+                    "name": "Phòng Trọ, Mặt Bằng Giá Rẻ ĐàLạt",
+                    "members": "10,9K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/phongtrodalatlamdongg/",
+                    "name": "Phòng Trọ Đà Lạt - Thanh Lí Đà Lạt",
+                    "members": "46,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2487702761351530/",
+                    "name": "BẤT ĐỘNG SẢN ĐÀ LẠT",
+                    "members": "19,9K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/homestaydalatgiasieure/",
+                    "name": "Khách Sạn, Homestay Đà Lạt",
+                    "members": "146,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2747385611954758/",
+                    "name": "Hội Thanh Lý Đà Lạt",
+                    "members": "51,0K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/4158172027576388/",
+                    "name": "PHÒNG TRỌ & TÌM VIỆC LÀM ĐÀ LẠT ✅",
+                    "members": "13,0K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/6483086995037013/",
+                    "name": "Chợ tốt Đà Lạt",
+                    "members": "105,0K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2674323069458783/",
+                    "name": "CHO THUÊ NHÀ NGUYÊN CĂN - MẶT BẰNG - KHÁCH SẠN TẠI ĐÀ LẠT",
+                    "members": "31,8K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/992726395229522/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/3239488812863186/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/3204973219824207/",
+                    "name": "Hội nhóm sưu tầm blinkbox khu vực Đà Lạt",
+                    "members": "14,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2977708659107733/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/reviewanvatdalat/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2625340211060310/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2540852869481070/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2480775145584318/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2394197994225465/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/muabannhadatdalats/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2260393280949228/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2259824127576884/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2107135722780265/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2014849188526245/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2014702542239924/",
+                    "name": "Chợ tốt Đà Lạt",
+                    "members": "127,5K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/2004697343215719/",
+                    "name": "Cho Thuê, Sang Nhượng MẶT BẰNG, KHÁCH SẠN, HOMESTAY, NHÀ NGUYÊN CĂN ĐÀ LẠT",
+                    "members": "4,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/villadalatgiare/",
+                    "name": "Villa Đà Lạt Nguyên Căn Giá Rẻ",
+                    "members": "181,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/nhadatdalatinfo/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/batdongsandalatxyz/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1896598837274708/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/nhathuedalat/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1834431880212328/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1831889773747830/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1822137881234536/",
+                    "name": "Việc Làm, Phòng Trọ . Nhà Nguyên Căn  Cho Thuê Đà Lạt",
+                    "members": "4,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1820655854841594/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1782211592051147/",
+                    "name": "RAO VẶT ĐÀ LẠT ✅",
+                    "members": "221,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1766087173661484/",
+                    "name": "Cho thuê mặt bằng Đà Lạt VNS- Group",
+                    "members": "13,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1756219887977983/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1732816693616090/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1701379513449815/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1690477440982275/",
+                    "name": "NHÀ ĐẤT ĐÀ LẠT GIÁ NGỘP",
+                    "members": "55,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1690386004606428/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1670454752984400/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/homestaydalatgiare.vn/",
+                    "name": "Homestay Đà Lạt Giá Rẻ",
+                    "members": "249,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/nhadatdalat24h/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1640159222990689/",
+                    "name": "Phòng Trọ Đà Lạt",
+                    "members": "50,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/muabannhadatdalatlamdong/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1635565826860827/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1620550398072071/",
+                    "name": "CHO THUÊ HOMESTAY, VILLA, KS, CĂN HỘ, PHÒNG TRỌ, NHÀ NGUYÊN CĂN ĐÀ LẠT",
+                    "members": "4,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1607478209766787/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1599719714109722/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/nhadatdl/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1542485692711760/",
+                    "name": "Mua bán - sang nhượng nhà đất đà lạt",
+                    "members": "15,8K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/villagiadinhdalat/",
+                    "name": "Villa Đà Lạt Nguyên Căn ✔️",
+                    "members": "9,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/miaoboutique/",
+                    "name": "Mua Bán Bất Động Sản Đà Lạt",
+                    "members": "130,7K thành viên",
+                    "isMarketplace": true
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1483548695274337/",
+                    "name": "ĐẶT PHÒNG  KHÁCH SẠN. HOMESTAY ONLINE ĐÀ LẠT ✅",
+                    "members": "26,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1468751439990843/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1374587256547245/",
+                    "name": "Chợ tốt Đà Lạt",
+                    "members": "248,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1348998311812530/",
+                    "name": "Nhà Đất Đà Lạt - Lâm Đồng",
+                    "members": "53,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1341598172860370/",
+                    "name": "Homestay Đà Lạt - Nhà nguyên căn - Villa Giá Rẻ",
+                    "members": "3,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/RaoVatBatDongSanDaLat/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/dalatcovieclam/",
+                    "name": "CHỢ RAO VẶT ĐÀ LẠT ✅",
+                    "members": "91,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1279548102066153/",
+                    "name": "CHO THUÊ NHÀ VÀ PHÒNG TRỌ ĐÀ LẠT",
+                    "members": "61,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/canhohomestaydalat/",
+                    "name": "[Đà Lạt] Cho Thuê Căn Hộ Homestay, Villa, Khách Sạn Giá Rẻ",
+                    "members": "6,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1273283066929834/",
+                    "name": "CHO THUÊ NHÀ NGUYÊN CĂN, MẶT BẰNG,KHO XƯỞNG, PHÒNG TRỌ, ĐỨC TRỌNG, LÂM ĐỒNG",
+                    "members": "5,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1210957842422262/",
+                    "name": "Khách Sạn Đà Lạt Giá Rẻ",
+                    "members": "24,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/khachsandalatgiaregancho/",
+                    "name": "Homestay Đà Lạt - Review Đà Lạt",
+                    "members": "172,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1201532986982047/",
+                    "name": "Cho thuê, mua bán nhà vườn",
+                    "members": "45,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1200000920066672/",
+                    "name": "Phòng Trọ Căn Hộ Cho Thuê Đà Lạt Lâm Đồng",
+                    "members": "21,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/khachsandalat.com.vn/",
+                    "name": "Khách Sạn Đà Lạt",
+                    "members": "113,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1151648028194360/",
+                    "name": "THUÊ VILLA ĐÀ LẠT NGUYÊN CĂN GIÁ RẺ",
+                    "members": "49,5K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/dacsandacthuninhthu/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/homestaydalatviewdepgiare/",
+                    "name": "Homestay Đà Lạt",
+                    "members": "330,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1132127133618984/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1101221423560533/",
+                    "name": "Cho Thuê Nhà Nguyên Căn - Phòng Trọ Giá Rẻ Ở Đà Lạt",
+                    "members": "11,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/bds.binhthuan.dalat/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1066741153824663/",
+                    "name": "Homestay, Villa, Nhà nguyên căn Đà Lạt",
+                    "members": "3,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/Muabanlamdong49/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1009411793030351/",
+                    "name": "Review Homestay - Khách Sạn Giá Rẻ Đà Lạt",
+                    "members": "5,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1006914470057031/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/1001767636564511/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/nhadatdalatgroup/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/975470559939040/",
+                    "name": "CHO THUÊ NHÀ NGUYÊN CĂN ĐÀ LẠT ✅",
+                    "members": "86,0K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/971232756406572/",
+                    "name": "Nhà đất Đà Lạt cần bán gấp",
+                    "members": "13,0K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/959914531041743/",
+                    "name": "Phòng trọ SINH VIÊN Đà Lạt",
+                    "members": "68,8K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/ghiendalat/",
+                    "name": "Ghiền Đà Lạt",
+                    "members": "1,9 triệu thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/nhadatdalat009/",
+                    "name": "Nhà Đất - Đà Lạt",
+                    "members": "19,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/904991850183997/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/900295994568175/",
+                    "name": "Sang nhượng mặt bằng, cho thuê khách sạn, villa, nhà nguyên căn ĐÀ LẠT",
+                    "members": "12,8K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/homestaydalatviewdepgiare.vn/",
+                    "name": "Homestay Đà Lạt View Đẹp Giá Rẻ",
+                    "members": "161,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/839882036489468/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/839349224912259/",
+                    "name": "Mua Bán Nhà Đất Đà Lạt",
+                    "members": "222,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/814164727130710/",
+                    "name": "Cho Thuê Căn Hộ, Mặt Bằng Ở Đà Lạt",
+                    "members": "33,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/807841907192709/",
+                    "name": "✅CHO THUÊ KHÁCH SẠN - VILLA - NHÀ NGUYÊN CĂN - NHẬN KÝ GỬI 0965.334.152 🧧",
+                    "members": "13,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/799727914784419/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/776816733226013/",
+                    "name": "Hội Kinh Doanh Hoa Đà Lạt",
+                    "members": "74,5K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/nhadatdalatxyz/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/732297387823588/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/726640324187235/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/dalat2land/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/697318404968750/",
+                    "name": "NHÀ ĐẤT ĐÀ LẠT",
+                    "members": "8,0K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/688527138941697/",
+                    "name": "Nhà Đất Đà Lạt",
+                    "members": "5,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/lamdong.dalatrealestate/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/669661067445933/",
+                    "name": "CHO THUÊ NHÀ NGUYÊN CĂN ✅ _VILLA _ MẶT BẰNG ĐÀ LẠT GIÁ TỐT ✅",
+                    "members": "11,8K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/665058805425846/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/matbangodalat/",
+                    "name": "Mặt bằng ở Đà Lạt",
+                    "members": "23,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/664729150356358/",
+                    "name": "Đà Lạt -  thuê & cho thuê nhà, Mặt Bằng, Homestay - phòng trọ - chung cư",
+                    "members": "22,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/662333581850284/",
+                    "name": "Cho thuê Nhà Đà Lạt -Nhà  Đất, Mặt Bằng, Phòng Trọ, Sang Nhượng",
+                    "members": "22,9K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/650489555517682/",
+                    "name": "Phòng trọ Sinh viên Đà Lạt",
+                    "members": "25,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/villakhachsandalat/",
+                    "name": "Đà Lạt -  Khách sạn Đà Lạt, Villa, Homestay, Nhà cho thuê Nguyên căn",
+                    "members": "33,8K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/642219019453300/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/637384657989597/",
+                    "name": "Nhà nguyên căn cho thuê - Sang nhượng khách sạn mặt bằng Đà Lạt",
+                    "members": "17,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/634105878088035/",
+                    "name": "Phòng Trọ Đà Lạt Giá Rẻ",
+                    "members": "13,9K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/632677990182626/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/626417675702797/",
+                    "name": "Sang Nhượng,Thuê và cho thuê mặt bằng tại Tp.Đà Lạt",
+                    "members": "16,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/616143868893390/",
+                    "name": "PHÒNG TRỌ - CĂN HỘ - NHÀ NGUYÊN CĂN ĐÀ LẠT",
+                    "members": "13,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/599045730801450/",
+                    "name": "Người Đà Lạt",
+                    "members": "142,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/timphongtrodalat/",
+                    "name": "phòng trọ Đà Lạt",
+                    "members": "37,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/596294664650767/",
+                    "name": "Nhà Đất Đà Lạt 24h ✅",
+                    "members": "18,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/593911084406412/",
+                    "name": "Mua Bán Nhà Đất Đà Lạt",
+                    "members": "13,9K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/phongdulichdalat/",
+                    "name": "Khách Sạn Đà Lạt",
+                    "members": "66,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/thuevilladalat/",
+                    "name": "Hội Biệt Thự Villa Căn Hộ Cho Thuê Đà Lạt",
+                    "members": "30,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/589570574825503/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/579214535875067/",
+                    "name": "CHO THUÊ PHÒNG TRỌ, NHÀ NGUYÊN CĂN, MẶT BÀNG ĐÀ LẠT",
+                    "members": "5,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/578861740453516/",
+                    "name": "Homestay - Khách Sạn Đà Lạt",
+                    "members": "42,5K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/567591003851088/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/563073135179082/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/561287638967355/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/557186038431159/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/batdongsandalat6886/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/phongtrodalat/",
+                    "name": "Phòng Trọ Đà Lạt Lâm Đồng",
+                    "members": "36,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/dalatservice/",
+                    "name": "Khách sạn Đà Lạt",
+                    "members": "55,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/532714693559574/",
+                    "name": "PHÒNG TRỌ SINH VIÊN, NHÀ NGHỈ KHÁCH SẠN, THUÊ MẶT BẰNG, BẤT ĐỘNG SẢN ĐÀ LẠT",
+                    "members": "49,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/530282585192092/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/523048071415127/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/villadalatgiare.vn/",
+                    "name": "Homestay Villa Đà Lạt Giá Rẻ",
+                    "members": "69,8K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/502064886633489/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/483804733840118/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/480733363005964/",
+                    "name": "Bất Động Sản Đà Lạt",
+                    "members": "20,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/477769224212772/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/flowerhomehotels/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/462164808418128/",
+                    "name": "HOMESTAY ĐÀ LẠT",
+                    "members": "469,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/beberoomdalat/",
+                    "name": "Homestay Đà Lạt",
+                    "members": "343,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/457212575950506/",
+                    "name": "Cho thuê nhà nguyên căn , mặt bằng , phòng trọ tại Đức Trọng …",
+                    "members": "11,4K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/451372778952422/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/batdongsandl/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/438855353443332/",
+                    "name": "NHÀ VƯỜN ĐÀ LẠT - MUA BÁN NHÀ ĐẤT ĐÀ LẠT   - THUÊ NHÀ ĐÀ LẠT",
+                    "members": "18,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/438316203562832/",
+                    "name": "Khách sạn, Villa, Căn hộ, Nhà cho thuê nguyên căn, Homestay Đà Lạt Uy Tín",
+                    "members": "7,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/httpssites.google.comviewbatdongsandalatlamdo/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/choraovatdalat/",
+                    "name": "CHO THUÊ PHÒNG TRỌ, NHÀ NGUYÊN CĂN, MẶT BẰNG ĐÀ LẠT",
+                    "members": "10,9K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/411221747802301/",
+                    "name": "PHÒNG TRỌ Đà Lạt ✅✅☀️",
+                    "members": "30,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/homestayindalat/",
+                    "name": "Hội cho thuê Homestay Đà Lạt giá rẻ",
+                    "members": "52,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/khachsandalatgiareviewdep/",
+                    "name": "Khách Sạn Đà Lạt Giá Rẻ View Đẹp",
+                    "members": "99,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/379691806203460/",
+                    "name": "THUÊ - CHO THUÊ NHÀ NGUYÊN CĂN, MẶT BẰNG, KHÁCH SẠN TẠI ĐÀ LẠT",
+                    "members": "3,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/356237492011374/",
+                    "name": "NHÀ VÀ CĂN HỘ CHO THUÊ ĐÀ LẠT/ DALAT HOUSE AND APARTMENT FOR RENT",
+                    "members": "32,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/355380826568694/",
+                    "name": "Khách sạn Đà Lạt giá rẻ",
+                    "members": "66,0K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/352833985517349/",
+                    "name": "Ngủ Ấm Ở Đà Lạt _ Booking Villa - Homestay - Hotel",
+                    "members": "32,8K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/350438722619897/",
+                    "name": "CHO THUÊ NHÀ NGUYÊN CĂN - KHÁCH SẠN - MẶT BẰNG ĐÀ LẠT",
+                    "members": "12,9K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/349414233850229/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/347050755967196/",
+                    "name": "Sang nhượng, cho thuê, mua bán bất động sản Đà Lạt",
+                    "members": "5,9K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/hpd.reviewdalat/",
+                    "name": "Review Đà Lạt",
+                    "members": "1,3 triệu thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/340174554663136/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/nhatrodalatgiare/",
+                    "name": "Nhà Trọ Đà Lạt Giá Rẻ",
+                    "members": "17,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/327661382897510/",
+                    "name": "Cho thuê Phòng Trọ Đà Lạt",
+                    "members": "26,1K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/326231863637452/",
+                    "name": "CHO THUÊ CĂN HỘ VÀ NHÀ NGUYÊN CĂN TẠI ĐÀ LẠT",
+                    "members": "40,3K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/324835529199356/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/315856472424123/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/306561183475162/",
+                    "name": "Khách Sạn , HomeStay Đà Lạt Giá Rẻ",
+                    "members": "5,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/batdongsan49com/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/304637177819889/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/300626851558287/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/288658681703142/",
+                    "name": "MUA BÁN, CHO THUÊ NHÀ - MẶT BẰNG ĐÀ LẠT",
+                    "members": "4,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/286233539776223/",
+                    "name": "Thuê - Cho Thuê Phòng Trọ, Nhà Nguyên Căn, Mặt Bằng Giá Tốt Đà Lạt",
+                    "members": "9,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/MuaBanNhaDatBatDongSanDaLat/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/277601566285399/",
+                    "name": "cho thuê nhà và mua bán nhà đất Đức Trọng Lâm Đồng",
+                    "members": "11,5K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/272582904653931/",
+                    "name": "Cho Thuê Phòng Trọ, Nhà , Mặt Bằng Ở Bảo Lộc",
+                    "members": "7,8K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/nhanghidalat/",
+                    "name": "Nhà nghỉ, Khách sạn Đà Lạt giá rẻ",
+                    "members": "14,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/datdalat247/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/264088185910059/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/254779451353294/",
+                    "name": "Khách Sạn - Resort - Tour Du Lịch Phan Thiết - Mũi Né",
+                    "members": "493,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/246067015777859/",
+                    "name": "Cho thuê mặt bằng đà lạt VNS-Group",
+                    "members": "22,5K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/238388667212728/",
+                    "name": "Cho thuê khách sạn, mặt bằng, phòng trọ nhà nguyên căn Đà Lạt",
+                    "members": "20,6K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/237358746780332/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/MuaBanNhaDatDaaLat/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/233496873886918/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/221874035355750/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/bdsdaiphat/",
+                    "name": "Nhà Đất Đà Lạt ✅",
+                    "members": "19,4K thành viên",
+                    "isMarketplace": true
+                },
+                {
+                    "url": "https://www.facebook.com/groups/219935826753767/",
+                    "name": "Cho Thuê Villa Đà Lạt, Nhà Nguyên Căn Đà Lạt, Căn Hộ Du Lịch Giá Rẻ",
+                    "members": "96,7K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/daongocha3979/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/211616406116962/",
+                    "name": "PHÒNG TRỌ - NHÀ CHO THUÊ ĐÀ LẠT",
+                    "members": "40,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/DaLatMuaBan/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/204935893609129/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/193488994592239/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/vanphudalat/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/174693963367968/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/171272516708894/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/162658957736592/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/157226134985576/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/batdongsandalathomes/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/151244461289222/",
+                    "name": "Hội Makeup Đà Lạt",
+                    "members": "36,2K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/135583810395773/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/129420340576254/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/122951268199255/",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/phongtrodalatgiare/",
+                    "name": "Phòng Trọ Đà Lạt Sinh Viên Giá Rẻ ✅",
+                    "members": "49,5K thành viên",
+                    "isMarketplace": false
+                },
+                {
+                    "url": "https://www.facebook.com/groups/107707693260786/",
+                    "isMarketplace": false
+                }
+            ],
+            "currentgroup": 40,
+            "status": true,
+            "sign_in": true,
+            "type": "discussion-re"
+        }
+    ],
+    "products": {
+        "real-estate": {
+            "rent": [
+                {
+                    "id": "re.r.101224.481",
+                    "type": "rent",
+                    "date": "10-12-24",
+                    "status": false,
+                    "categories": "homestay",
+                    "province": "lamdong",
+                    "district": "dalat",
+                    "ward": 3,
+                    "street": "tr\u1ea7n ph\u00fa",
+                    "area": "",
+                    "construction": "1 tr\u1ec7t, 1 l\u1ea7u",
+                    "function": "1pk, 1 b\u1ebfp, 1pn, 1wc",
+                    "buildingline": "motorbike",
+                    "furniture": "full",
+                    "legal": "",
+                    "price": 12,
+                    "description": "- cho thu\u00ea homestay g\u1ed7 , s\u00e2n v\u01b0\u1eddn bbq ngay trung t\u00e2m \u0111\u00e0 l\u1ea1t \n- nh\u00e0 n\u1ed9i th\u1ea5t g\u1ed7 \u1ea5m c\u00fang nh\u01b0 trong h\u00ecn",
+                    "images": "/Users/dinhbinh/Workspace/mymanager-v2/bin/db/products/real-estate/images/re.r.101224.481",
+                    "options": "real-estate",
+                    "is_uploaded": true,
+                    "is_downloaded": true
+                },
+                {
+                    "id": "re.r.102324.795",
+                    "type": "rent",
+                    "date": "10-23-24",
+                    "status": true,
+                    "categories": "villa",
+                    "province": "lamdong",
+                    "district": "dalat",
+                    "ward": 8,
+                    "street": "mai anh \u0111\u00e0o",
+                    "area": "",
+                    "construction": "1 h\u1ea7m, 1 tr\u1ec7t, 2 l\u1ea7u",
+                    "function": "1pk, 1 b\u1ebfp, 5pn, 7wc",
+                    "buildingline": "car",
+                    "furniture": "full",
+                    "legal": "none",
+                    "price": 25,
+                    "description": "+ C\u00f3 ph\u00f2ng gym & s\u00e2n v\u01b0\u1eddn c\u1ef1c r\u1ed9ng\n+ Trung t\u00e2m th\u00e0nh ph\u1ed1 g\u1ea7n thung l\u0169ng t\u00ecnh y\u00eau, v\u01b0\u1eddn hoa th\u00e0nh ph\u1ed1, qu\u1ea3ng Tr\u01b0\u1eddng L\u00e2m Vi\u00ean, c\u00e1ch ch\u1ee3 \u0111\u00eam 2km.\n-S\u00e2n v\u01b0\u1eddn r\u1ed9ng r\u00e3i n\u01b0\u1edbng BBQ , b\u1ebfp \u0111\u1ea7y \u0111\u1ee7 ti\u1ec7n nghi\n+ S\u00e2n \u0111\u1eadu \u0111\u01b0\u1ee3c 4-6 chi\u1ebfc \u00f4t\u00f4 t\u1eeb 4-16 ch\u1ed7.",
+                    "images": "/Users/dinhbinh/Workspace/mymanager-v2/bin/db/products/real-estate/images/re.r.102324.795",
+                    "options": "real-estate",
+                    "is_uploaded": true,
+                    "is_downloaded": true
+                }
+            ],
+            "sell": [
+                {
+                    "id": "re.s.121424.55",
+                    "type": "sell",
+                    "date": "12-14-24",
+                    "status": true,
+                    "categories": "house",
+                    "province": "lamdong",
+                    "district": "dalat",
+                    "ward": 8,
+                    "street": "nguy\u1ec5n h\u1eefu c\u1ea3nh",
+                    "area": 70,
+                    "construction": "1 tr\u1ec7t",
+                    "function": "1pk, 1 b\u1ebfp, 2pn, 1wc",
+                    "buildingline": "motorbike",
+                    "furniture": "none",
+                    "legal": "snnc",
+                    "price": 2.3,
+                    "description": "+ Nh\u00e0 m\u1edbi, s\u1ea1ch s\u1ebd, g\u1ecdn g\u00e0ng",
+                    "images": "/Users/dinhbinh/Workspace/mymanager-v2/bin/db/products/real-estate/images/re.s.121424.55",
+                    "options": "real-estate",
+                    "is_downloaded": true
+                }
+            ],
+            "assignment": [
+                {
+                    "id": "re.a.121624.35",
+                    "type": "assignment",
+                    "date": "12-16-24",
+                    "status": false,
+                    "categories": "retailspace",
+                    "province": "lamdong",
+                    "district": "dalat",
+                    "ward": 8,
+                    "street": "v\u00f5 tr\u01b0\u1eddng to\u1ea3n",
+                    "area": "",
+                    "construction": "",
+                    "function": "1 MBKD, 3PN",
+                    "buildingline": "car",
+                    "furniture": "basic",
+                    "legal": "none",
+                    "price": 10,
+                    "description": "+ Nh\u00e0 c\u00f3 2 l\u1ea7u: 3pn tr\u00ean + MBKD\n+ Sang l\u1ea1i 3 t\u1ef7, lanh, b\u00e0n gh\u1ebf, \u0111\u1ed3 gia d\u1ee5ng, 2 th\u00e1ng ti\u1ec1n c\u1ecdc (90tr)\n+ C\u1ecdc 2 \u0111\u00f3ng 1",
+                    "images": "/Users/dinhbinh/Workspace/mymanager-v2/bin/db/products/real-estate/images/re.a.121624.35",
+                    "options": "real-estate",
+                    "is_downloaded": true
+                }
+            ]
+        }
+    },
+    "settings": []
+}

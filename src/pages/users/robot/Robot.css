@@ -35,8 +35,40 @@
     background-color: rgba(255,153,102, 0.6);
 }
 
-.robot__uid__setting .uid__setting__items {
-    padding: 4px;
+.content__robot__setting {
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
-.content__robot__setting {}
+.robot__uid__setting {
+}
+.robot__uid__setting .setting__item__prev {
+    position: relative;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+}
+.robot__uid__setting .setting__item__prev p {
+    cursor: pointer;
+    padding: 4px;
+}
+.robot__uid__setting .setting__item__prev:hover  .setting__prev-products {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.robot__uid__setting .setting__item__prev .setting__prev-products {
+    position: absolute;
+    list-style: none;
+    left: 0;
+    width: 0;
+    height: 0;
+    padding: 8px;
+    display: none;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 1px 1px 4px 2px #ccc;
+    transition: all 0.3s ease;
+}
