@@ -6,7 +6,6 @@ import List from "./list/List";
 import Create from "./create/Create";
 import UIDInfo from "./info/Info";
 import Robot from "./robot/Robot2";
-// import Robot from "./robot/Robot";
 import "./Users.css";
 
 function Users() {

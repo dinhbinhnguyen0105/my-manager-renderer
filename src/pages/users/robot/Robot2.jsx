@@ -1,6 +1,9 @@
-import React, { Fragment, useCallback, useEffect, useState } from "react";
+import React, { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { updateDataHandler } from "../../../utils/utils";
 import "./Robot.css"
+
+const RobotActionContext = createContext();
+const UIDsContext = createContext();
 
 function Robot() {
     const [UIDsState, setUIDsState] = useState([]);
@@ -26,6 +29,20 @@ function Robot() {
         fetchUIDs();
     }, []);
 
+    return (
+        <UIDsContext.Provider value={[UIDsState, setUIDsState]}>
+            <RobotActionContext.Provider value={[robotActionState, setRobotActionState]}>
+                <div className="content__robot">
+                    <RobotUIDs />
+                </div>
+            </RobotActionContext.Provider>
+        </UIDsContext.Provider>
+    );
+}
+
+function RobotUIDs() {
+    const [UIDsState, setUIDsState] = useContext(UIDsContext);
+
     const updateUIDsHandler = useCallback(payload => {
         setUIDsState(prev => (
             prev.map(UIDInfo => (
@@ -38,47 +55,8 @@ function Robot() {
                 uid: payload.uid,
                 data: payload.data,
             });
-        };
-
-    }, []);
-
-    return (
-        <div className="content__robot">
-            <RobotUIDs
-                uids={UIDsState}
-                updateUIDsHandler={updateUIDsHandler}
-                robotActionState={robotActionState}
-                setRobotActionState={setRobotActionState}
-            />
-        </div>
-    );
-}
-
-function RobotUIDs({ uids, updateUIDsHandler, robotActionState, setRobotActionState }) {
-    const [miscState, setMiscState] = useState([]);
-    const [reState, setReState] = useState([]);
-    const [fashionnState, setFashionState] = useState([]);
-
-    const fetchProducts = useCallback(() => {
-        if (window.electronAPIs) {
-            window.electronAPIs.send("request", { request: "list-of-product", option: "re" });
-            window.electronAPIs.send("request", { request: "list-of-product", option: "misc" });
-            window.electronAPIs.send("request", { request: "list-of-product", option: "fashion" });
-            window.electronAPIs.on("list-of-product-re", (_, response) => setReState(response.data));
-            window.electronAPIs.on("list-of-product-misc", (_, response) => setMiscState(response.data));
-            window.electronAPIs.on("list-of-product-fashion", (_, response) => setFashionState(response.data));
         } else {
-            fetch("http://localhost:3001/products")
-                .then(res => res.json())
-                .then(res => {
-                    if (res["real-estate"]) { setReState(res["real-estate"]); }
-                    else { setReState([]); };
-                    if (res.misc) { setMiscState(res.misc); }
-                    else { setMiscState([]); };
-
-                })
-                .catch(err => new Error(err));
-        }
+        };
     }, []);
 
     const selectedUIDHandler = e => {
@@ -93,8 +71,6 @@ function RobotUIDs({ uids, updateUIDsHandler, robotActionState, setRobotActionSt
         });
     }
 
-    useEffect(() => { fetchProducts(); }, []);
-
     return (
         <div className="content__robot__uids">
             <table className="uids__table">
@@ -107,7 +83,7 @@ function RobotUIDs({ uids, updateUIDsHandler, robotActionState, setRobotActionSt
                     </tr>
                 </thead>
                 <tbody className="uids__table__body">
-                    {uids.map((uid, index) => (
+                    {UIDsState.map((uid, index) => (
                         <React.Fragment key={index}>
                             <tr
                                 className={`table__body__row${(!uid.status ? " error" : "") || (!uid.sign_in ? " warn" : "")}`}
@@ -131,7 +107,7 @@ function RobotUIDs({ uids, updateUIDsHandler, robotActionState, setRobotActionSt
                                 (uid.robot && uid.robot.selected) && (
                                     <tr className="robot__uid__setting" data-uid={uid.uid}>
                                         <td colSpan={5}>
-                                            <UIDSetting uid={uid} />
+                                            <UIDSetting updateUIDsHandler={updateDataHandler} />
                                         </td>
                                     </tr>
                                 )
@@ -144,18 +120,59 @@ function RobotUIDs({ uids, updateUIDsHandler, robotActionState, setRobotActionSt
     );
 }
 
-function UIDSetting({ uid }) {
+function UIDSetting({ updateUIDsHandler }) {
+    const [UIDsState, setUIDsState] = useContext(UIDsContext);
+    const [productsState, setProductsState] = useState({});
+
+    const fetchProducts = useCallback(() => {
+        if (window.electronAPIs) {
+            window.electronAPIs.send("request", { request: "list-of-proudct" })
+
+            window.electronAPIs.on("list-of-product", (_, response) => setProductsState(response.data));
+        } else {
+            fetch("http://localhost:3001/products")
+                .then(res => res.json())
+                .then(res => {
+                    setProductsState(res);
+                })
+                .catch(err => new Error(err));
+        }
+    }, []);
+    useEffect(() => { fetchProducts(); }, []);
+    const addActionHandler = (e) => {
+    };
+
+    const Products = ({ productsState, onSelect }) => {
+        // Xử lý tình huống không có sản phẩm
+        if (!productsState || Object.keys(productsState).length === 0) {
+            return <p>Loading products...</p>;
+        }
+    
+        return (
+            <select
+                name="setting__action__products"
+                onChange={(e) => onSelect(e.target.value)} // Gửi giá trị được chọn lên callback
+            >
+                {Object.entries(productsState).map(([key, value], index) => (
+                    <option value={key} key={index}>
+                        {`${key} (${value.length} items)`} {/* Hiển thị số lượng sản phẩm */}
+                    </option>
+                ))}
+            </select>
+        );
+    };
+    
 
     return (
         <React.Fragment>
-            <h3>UID: {uid.uid}</h3>
+            <h3>UID: {UIDsState.uid}</h3>
             <div className="setting__item__prev">
-                {(uid?.robot?.prev?.products && uid.robot.prev.products.length > 0) && (
+                {(UIDsState?.robot?.prev?.products && UIDsState.robot.prev.products.length > 0) && (
                     <>
-                        <p>{uid.robot.prev.products.length} lasted products</p>
+                        <p>{UIDsState.robot.prev.products.length} lasted products</p>
                         <ul className="setting__prev-products">
                             {
-                                uid.robot.prev.products.map((prevProducts, index) => (
+                                UIDsState.robot.prev.products.map((prevProducts, index) => (
                                     <li key={index}>{prevProducts}</li>
                                 ))
                             }
@@ -164,8 +181,19 @@ function UIDSetting({ uid }) {
                 )}
             </div>
             <div className="uid__setting__item">
-                <button>add</button>
-
+                <button onClick={addActionHandler}>add</button>
+                <div className="uid__setting__action">
+                    <select name="setting__action__options">
+                        <option value="marketplace">marketplace</option>
+                        <option value="discussion">discussion</option>
+                    </select>
+                    <select name="setting__action__product-type">
+                        {Object.keys(productsState).map((productKey, index) => (
+                            <option value={productKey} key={index}>{productKey}</option>
+                        ))}
+                    </select>
+                    <Products />
+                </div>
             </div>
         </React.Fragment>
     );
