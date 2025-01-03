@@ -41,7 +41,10 @@
             "phone": "",
             "status": true,
             "sign_in": true,
-            "type": "discussion-misc"
+            "type": "discussion-misc",
+            "robot": {
+                "selected": true
+            }
         },
         {
             "date": "12-25-2024",
