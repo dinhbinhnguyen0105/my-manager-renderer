@@ -8,10 +8,12 @@ function ProductProvider({ children }) {
 
     useEffect(() => {
         if (window.electronAPIs) {
-            window.electronAPIs.send("request", { request: "list-of-proudct" })
+            window.electronAPIs.send("request", { request: "products", category: "real-estate" });
+            window.electronAPIs.send("request", { request: "products", category: "fashion"});
 
             window.electronAPIs.on("list-of-product", (_, response) => {
                 setProducts(response.data);
+
             });
         } else {
             fetch("http://localhost:3001/products")

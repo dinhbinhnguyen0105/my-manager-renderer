@@ -4,10 +4,11 @@ import { ProductContext } from "../context/ProductContext";
 
 function UIDAction() {
     const [products, setProducts] = useContext(ProductContext);
-    const [productType, setProductType] = useState(Object.keys(products).length > 0 ? Object.keys(products)[0] : null);
-    const [product, setProduct] = useState(products[productType].length > 0 ? products[productType][0]: null);
-
-    console.log(products[productType]);
+    console.log(products);
+    // const [productCategory, setProductCategory] = useState(Object.keys(products).length > 0 ? Object.keys(products)[0] : undefined);
+    // const [product, setProduct] = useState((products && products[productCategory]) ? Object.values(products[productCategory])[0] : undefined );
+    
+    // console.log(Object.values(products[productCategory]));
 
     return (
         <div className="uid__setting__action">
@@ -15,12 +16,12 @@ function UIDAction() {
                 <option value="marketplace">marketplace</option>
                 <option value="discussion">discussion</option>
             </select>
-            <select
+            {/* <select
                 name="setting__action__product-type"
                 id=""
                 className="setting__action__product-type"
-                value={productType}
-                onChange={e => setProductType(e.target.value)}
+                value={productCategory}
+                onChange={e => setProductCategory(e.target.value)}
             >
                 {Object.keys(products).map((productKey, index) => (
                     <option value={productKey} key={index}>
@@ -34,7 +35,7 @@ function UIDAction() {
                 value={product}
             >
 
-            </select>
+            </select> */}
         </div>
     );
 }
