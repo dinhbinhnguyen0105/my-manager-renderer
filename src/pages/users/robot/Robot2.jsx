@@ -123,45 +123,31 @@ function RobotUIDs() {
 function UIDSetting({ updateUIDsHandler }) {
     const [UIDsState, setUIDsState] = useContext(UIDsContext);
     const [productsState, setProductsState] = useState({});
+    const [selectedProductTypeState, setSelectedProductTypeState] = useState(null);
+    const [selectedProductState, setSelectedProductState] = useState(null);
 
-    const fetchProducts = useCallback(() => {
+    useEffect(() => {
         if (window.electronAPIs) {
             window.electronAPIs.send("request", { request: "list-of-proudct" })
 
-            window.electronAPIs.on("list-of-product", (_, response) => setProductsState(response.data));
+            window.electronAPIs.on("list-of-product", (_, response) => {
+                setProductsState(response.data);
+                setSelectedProductTypeState(Object.keys(response.data)[0]);
+            });
         } else {
             fetch("http://localhost:3001/products")
                 .then(res => res.json())
                 .then(res => {
                     setProductsState(res);
+                    setSelectedProductTypeState(Object.keys(res)[0]);
                 })
                 .catch(err => new Error(err));
         }
     }, []);
-    useEffect(() => { fetchProducts(); }, []);
+
     const addActionHandler = (e) => {
     };
 
-    const Products = ({ productsState, onSelect }) => {
-        // Xử lý tình huống không có sản phẩm
-        if (!productsState || Object.keys(productsState).length === 0) {
-            return <p>Loading products...</p>;
-        }
-    
-        return (
-            <select
-                name="setting__action__products"
-                onChange={(e) => onSelect(e.target.value)} // Gửi giá trị được chọn lên callback
-            >
-                {Object.entries(productsState).map(([key, value], index) => (
-                    <option value={key} key={index}>
-                        {`${key} (${value.length} items)`} {/* Hiển thị số lượng sản phẩm */}
-                    </option>
-                ))}
-            </select>
-        );
-    };
-    
 
     return (
         <React.Fragment>
@@ -182,39 +168,60 @@ function UIDSetting({ updateUIDsHandler }) {
             </div>
             <div className="uid__setting__item">
                 <button onClick={addActionHandler}>add</button>
-                <div className="uid__setting__action">
-                    <select name="setting__action__options">
-                        <option value="marketplace">marketplace</option>
-                        <option value="discussion">discussion</option>
-                    </select>
-                    <select name="setting__action__product-type">
-                        {Object.keys(productsState).map((productKey, index) => (
-                            <option value={productKey} key={index}>{productKey}</option>
-                        ))}
-                    </select>
-                    <Products />
-                </div>
+
             </div>
         </React.Fragment>
     );
 }
 
-export default Robot;
+function RobotSettingAction({ productsState, selectedProductTypeState }) {
 
-/**
-{
-    robot: {
-        selected: true,
-        actions: [
-            {product: "", location: ""}
-        ],
-        prev: {
-            products: [],
-            location: [
-                { group: ""},
-                { marketplace: true}
-            ],
+    const Products = () => {
+        // Xử lý tình huống không có sản phẩm
+        if (!productsState || Object.keys(productsState).length === 0) {
+            return <p>Loading products...</p>;
         }
-    }
+        const products = Object.entries(productsState[selectedProductTypeState]).flatMap(([type, values]) =>
+            values.map(value => ({ [type]: value }))
+        );
+
+        return (
+            <select
+                name="setting__action__products"
+            >
+                {
+                    products.map((product, index) => (
+                        <option value={Object.values(product)[0]} key={index}>
+                            [ {Object.keys(product)[0].toUpperCase()} ] {Object.values(product)[0]}
+                        </option>
+                    ))
+                }
+            </select>
+        );
+    };
+
+    return (
+        <div className="uid__setting__action">
+            <select name="setting__action__options">
+                <option value="marketplace">marketplace</option>
+                <option value="discussion">discussion</option>
+            </select>
+            {
+                selectedProductState && (
+                    <select
+                        name="setting__action__product-type"
+                        onChange={e => setSelectedProductTypeState(e.target.value)}
+                        value={selectedProductTypeState}
+                    >
+                        {Object.keys(productsState).map((productKey, index) => (
+                            <option value={productKey} key={index}>{productKey}</option>
+                        ))}
+                    </select>
+                )
+            }
+            <Products />
+        </div>
+    )
 }
- */
+
+export default Robot;
